@@ -9,8 +9,8 @@ namespace AulaPOO_Encapsulamento
         {
             MasterCard m = new MasterCard();
             m.Parcela = 12;
-
-            Console.WriteLine(m.Parcela);
+            m.Bandeira = "Visa";
+            Console.WriteLine(m.Bandeira);
         }
     }
 }

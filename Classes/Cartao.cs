@@ -3,13 +3,41 @@ namespace AulaPOO_Encapsulamento.Classes
     public class Cartao
     {
         //Declaração de varáveis 
-        private string numero; 
+        private string numero
+        ; 
+        public string nNuemero{
+            get{return numero;}
+            set{numero = value;}
+        }
 
-        protected string token = "Qwertyui";
+        public string bandeira 
+        = "Mastercard";
 
-        private string cvv;
+        public string Bandeira{
+             get{ return bandeira;}
+             set{bandeira = value;}
+        }
 
-        protected float limite = 5000;
+        protected string token 
+        = "Qwertyui";
+
+        public string Token{
+            get{return token;}
+        }
+        private string cvv
+        ;
+
+        public string Cvvv{
+            get{ return cvv;}
+            set{cvv = value;}
+        }
+
+        protected float limitedecompea
+        = 5000;
+
+        public float Limitedecompra{
+            get {return limitedecompea;}
+        }
 
         //declaração dos metodos 
         public string RegistrarCompra(bool validado){
@@ -22,9 +50,6 @@ namespace AulaPOO_Encapsulamento.Classes
         protected string ValidarToken(string token){
             return "";
         }
-
-
-
 
     }
 }
